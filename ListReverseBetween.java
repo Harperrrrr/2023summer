@@ -57,6 +57,6 @@ public class ListReverseBetween {
         beforeHead.next = tail;
         t.next = head;
         head.next = next;
-        return head;
+        return head; //now is the tail
     }
 }
