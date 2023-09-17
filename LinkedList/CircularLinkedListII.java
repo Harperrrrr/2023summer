@@ -1,4 +1,6 @@
-public class CircularLinkedList {
+package LinkedList;
+
+public class CircularLinkedListII {
     class ListNode {
         int val;
         ListNode next;
@@ -9,16 +11,21 @@ public class CircularLinkedList {
         }
     }
 
-    public boolean hasCycle(ListNode head) {
+    public ListNode detectCycle(ListNode head) {
         ListNode fast = head;
         ListNode slow = head;
         do {
             if (slow == null || fast == null || fast.next == null){
-                return false;
+                return null;
             }
             slow = slow.next;
             fast = fast.next.next;
         }while (slow != fast);
-        return true;
+        fast = head;
+        while(slow != fast){
+            slow = slow.next;
+            fast = fast.next;
+        }
+        return slow;
     }
 }

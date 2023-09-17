@@ -1,3 +1,5 @@
+package LinkedList;
+
 public class CrossLinkedList {
     public class ListNode {
         int val;

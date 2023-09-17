@@ -42,10 +42,10 @@ class PreBinary {
             ans=visit(root.left,ans);
             ans+=')';
         }else{
-            ans+=')';
+            ans+='(';
             ans=visit(root.left,ans);
             ans+=')';
-            ans+=')';
+            ans+='(';
             ans=visit(root.right,ans);
             ans+=')';
         }
