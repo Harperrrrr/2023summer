@@ -1,3 +1,5 @@
+package LinkedList;
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -8,24 +10,23 @@
  * ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode() {
-    }
-
-    ListNode(int val) {
-        this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
-    }
-}
-
 public class ListReverseBetween {
+    class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode() {
+        }
+
+        ListNode(int val) {
+            this.val = val;
+        }
+
+        ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
+        }
+    }
     public ListNode reverseBetween(ListNode head, int left, int right) {
         ListNode beforeHead = new ListNode(0,head);
         if (left == right) {
@@ -60,3 +61,14 @@ public class ListReverseBetween {
         return head; //now is the tail
     }
 }
+/**
+ * ListNode reverseBetween(ListNode head, int m, int n) {
+ *     // base case
+ *     if (m == 1) {
+ *         return reverseN(head, n);
+ *     }
+ *     // 前进到反转的起点触发 base case
+ *     head.next = reverseBetween(head.next, m - 1, n - 1);
+ *     return head;
+ * }
+ */

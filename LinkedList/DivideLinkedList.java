@@ -41,3 +41,7 @@ public class DivideLinkedList {
         return ans.next;
     }
 }
+/**
+ * 可以生成两条新的小链表
+ * 只要记得断开已经放入新链表的节点的next
+ */
