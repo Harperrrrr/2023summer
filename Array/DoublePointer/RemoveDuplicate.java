@@ -1,4 +1,4 @@
-package Array;
+package Array.DoublePointer;
 
 public class RemoveDuplicate {
     public int removeDuplicates(int[] nums) {

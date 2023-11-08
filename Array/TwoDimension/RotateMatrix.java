@@ -1,4 +1,4 @@
-package Array;
+package Array.TwoDimension;
 
 public class RotateMatrix {
     public void rotate(int[][] matrix) {

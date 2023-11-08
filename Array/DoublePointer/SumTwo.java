@@ -1,4 +1,4 @@
-package Array;
+package Array.DoublePointer;
 
 public class SumTwo {
     public int[] twoSum(int[] numbers, int target) {

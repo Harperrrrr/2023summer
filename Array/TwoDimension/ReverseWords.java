@@ -1,4 +1,4 @@
-package Array;
+package Array.TwoDimension;
 
 public class ReverseWords {
     public String reverseWords(String s) {

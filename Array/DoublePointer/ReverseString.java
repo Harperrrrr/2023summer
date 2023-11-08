@@ -1,4 +1,4 @@
-package Array;
+package Array.DoublePointer;
 
 public class ReverseString {
     public void reverseString(char[] s) {

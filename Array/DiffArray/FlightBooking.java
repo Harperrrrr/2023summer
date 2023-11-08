@@ -1,4 +1,4 @@
-package Array;
+package Array.DiffArray;
 
 public class FlightBooking {
     public int[] corpFlightBookings(int[][] bookings, int n) {

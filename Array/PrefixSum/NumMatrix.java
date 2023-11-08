@@ -1,4 +1,4 @@
-package Array;
+package Array.PrefixSum;
 
 public class NumMatrix {
     private int[][] prefix;

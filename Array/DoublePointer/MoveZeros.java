@@ -1,4 +1,4 @@
-package Array;
+package Array.DoublePointer;
 
 public class MoveZeros {
     public void moveZeroes(int[] nums) {

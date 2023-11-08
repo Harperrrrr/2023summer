@@ -1,4 +1,4 @@
-package Array;
+package Array.SlidingWindow;
 
 import java.util.Arrays;
 import java.util.LinkedList;

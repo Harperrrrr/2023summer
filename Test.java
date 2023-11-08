@@ -1,14 +1,10 @@
-import Array.FindAnagrams;
-import Array.LongestSubstring;
-import Array.SpiralOrderShitVersion;
-
-import java.util.List;
+import Array.SlidingWindow.MinWindow;
 
 public class Test {
     public static void main(String[] args) {
-        String s = "cbaebabacd";
-        FindAnagrams fa = new FindAnagrams();
-        List<Integer> ans = fa.findAnagrams(s,"abc");
-        System.out.println(ans);
+        String s = "ab";
+        String t = "A";
+        MinWindow mw = new MinWindow();
+        String ans = mw.minWindow(s,t);
     }
 }

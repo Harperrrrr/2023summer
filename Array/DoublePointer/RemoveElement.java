@@ -1,4 +1,4 @@
-package Array;
+package Array.DoublePointer;
 
 public class RemoveElement {
     public int removeElement(int[] nums, int val) {

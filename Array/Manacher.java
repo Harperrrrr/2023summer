@@ -1,6 +1,6 @@
 package Array;
 
-public class LongestPalindrome {
+public class Manacher {
     public String longestPalindrome(String s) {
         char[] str = preProcess(s);
         int R = -1;

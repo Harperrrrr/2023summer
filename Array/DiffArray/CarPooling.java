@@ -1,4 +1,4 @@
-package Array;
+package Array.DiffArray;
 
 public class CarPooling {
     public boolean carPooling(int[][] trips, int capacity) {

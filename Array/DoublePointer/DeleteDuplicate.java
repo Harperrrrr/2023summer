@@ -1,4 +1,4 @@
-package Array;
+package Array.DoublePointer;
 
 public class DeleteDuplicate {
     public class ListNode {
