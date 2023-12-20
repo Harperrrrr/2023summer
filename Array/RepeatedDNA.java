@@ -21,6 +21,10 @@ public class RepeatedDNA {
             h[i] = h[i - 1] * P + s.charAt(i);
         }
         HashMap<Integer, Integer> map = new LinkedHashMap<>();
+        /**
+         * key:hash
+         * value:count
+         */
         map.put(h[9], 1);
         List<String> ans = new LinkedList<>();
         for (int i = 1, j = 10; j < s.length(); ++i, ++j) {
