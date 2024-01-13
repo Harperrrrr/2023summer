@@ -4,17 +4,14 @@ import Array.BinarySearch.ShipWithinDays;
 import Array.HorseRacing;
 import Array.O1.BlackList;
 import Array.O1.RandomizedSet;
+import Array.RemoveDuplicate.ConcatMaxNumber;
+import Array.RemoveDuplicate.RemoveDuplicateLetters;
 import Array.SlidingWindow.MinWindow;
 import Array.SlidingWindow.MinWindowSimple;
 
 public class Test {
     public static void main(String[] args) {
-        BlackList bl = new BlackList(4, new int[]{0, 1});
-        bl.pick();
-        bl.pick();
-        bl.pick();
-        bl.pick();
-        bl.pick();
-        bl.pick();
+        ConcatMaxNumber cmn = new ConcatMaxNumber();
+        cmn.maxNumber(new int[]{6, 7}, new int[]{6, 0, 4}, 5);
     }
 }
