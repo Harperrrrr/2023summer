@@ -1,0 +1,28 @@
+// 最小堆
+PriorityQueue<ListNode> minHeap = new PriorityQueue<>(Comparator.comparingInt(node -> node.val));
+
+// 最大堆
+PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder())
+PriorityQueue<ListNode> maxHeap = new PriorityQueue<>((node1, node2) -> node2.val - node1.val)
+
+获取peek()   弹出poll()    加入offer()
+
+char[] charArray = {'H', 'e', 'l', 'l', 'o'};
+int arrayLength = charArray.length;
+
+String str = "Hello";
+int strLength = str.length();
+
+LinkedList<Node> deque = new LinkedList<>();
+deque.size()	deque.removeFirst()	deque.getFirst()	deque.add(n)
+
+int[] sourceArray = {1, 2, 3, 4, 5};
+int[] destinationArray = Arrays.copyOf(sourceArray, sourceArray.length);	//一定有长度
+int[] newArray = Arrays.copyOfRange(sourceArray, startIndex, endIndex + 1);	//左闭右开
+//这样形成了新的数组，有的时候应该直接循环赋值
+
+List<Integer> ans = new ArrayList<>();
+for(int i = 0; i < counts.length; ++i){
+	ans.add(counts[i]);
+}
+// int[]转List<Integer>

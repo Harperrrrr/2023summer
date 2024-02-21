@@ -8,10 +8,14 @@ import Array.RemoveDuplicate.ConcatMaxNumber;
 import Array.RemoveDuplicate.RemoveDuplicateLetters;
 import Array.SlidingWindow.MinWindow;
 import Array.SlidingWindow.MinWindowSimple;
+import BinaryTree.Serialize;
+import Merge.CountSmaller;
+import Merge.ReversePairs;
 
 public class Test {
     public static void main(String[] args) {
-        ConcatMaxNumber cmn = new ConcatMaxNumber();
-        cmn.maxNumber(new int[]{6, 7}, new int[]{6, 0, 4}, 5);
+        CountSmaller cs = new CountSmaller();
+        int[] record = {5, 2, 6, 1};
+        cs.countSmaller(record);
     }
 }
