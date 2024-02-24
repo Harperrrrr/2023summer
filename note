@@ -7,15 +7,21 @@ PriorityQueue<ListNode> maxHeap = new PriorityQueue<>((node1, node2) -> node2.va
 
 获取peek()   弹出poll()    加入offer()
 
+
+//获取数组/字符串长度
 char[] charArray = {'H', 'e', 'l', 'l', 'o'};
 int arrayLength = charArray.length;
 
 String str = "Hello";
 int strLength = str.length();
 
+
+//LinkedList操作
 LinkedList<Node> deque = new LinkedList<>();
 deque.size()	deque.removeFirst()	deque.getFirst()	deque.add(n)
 
+
+//Arrays.copy
 int[] sourceArray = {1, 2, 3, 4, 5};
 int[] destinationArray = Arrays.copyOf(sourceArray, sourceArray.length);	//一定有长度
 int[] newArray = Arrays.copyOfRange(sourceArray, startIndex, endIndex + 1);	//左闭右开
@@ -26,3 +32,26 @@ for(int i = 0; i < counts.length; ++i){
 	ans.add(counts[i]);
 }
 // int[]转List<Integer>
+
+
+//Random
+Random rand = new Random();
+int r = rand.nextInt(nums.size());
+// [0, nums.size() - 1]
+
+
+//List
+List<Integer> list = new ArrayList<>();
+
+// 增加元素
+list.add(5);
+list.add(10);
+list.add(15);
+
+// 删除元素
+list.remove(0); 
+
+// 修改元素
+list.set(0, 20);
+
+
