@@ -55,3 +55,28 @@ list.remove(0);
 list.set(0, 20);
 
 
+List<Integer> mergedList = new ArrayList<>();
+mergedList.addAll(list1);
+mergedList.addAll(list2);
+mergedList.addAll(list3);
+
+
+//HashSet
+Set<Integer> set = new HashSet<>();
+        
+set.add(1);
+set.add(2);
+set.add(3);
+
+set.contains(elementToCheck);
+
+
+// Queue
+Queue<Integer> queue = new ArrayDeque<>();
+queue.offer(1);
+queue.peek();
+queue.poll();	//移除
+
+
+//左移 2的n次方
+(1 << n)
