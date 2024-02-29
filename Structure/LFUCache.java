@@ -1,7 +1,7 @@
 package Structure;
 
 import java.util.HashMap;
-
+//460
 public class LFUCache {
     class Node{
         Node prev;

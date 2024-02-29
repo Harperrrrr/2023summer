@@ -1,15 +1,21 @@
 import Structure.LFUCache;
 import Structure.LRUCache;
+import Structure.ReplaceWords;
+import Structure.WordDictionary;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Test {
     public static void main(String[] args) {
-        LFUCache cache = new LFUCache(2);
-        cache.put(2, 1);
-        cache.put(1, 1);
-        cache.put(2, 3);
-        cache.put(4, 1);
-        cache.get(1);
-        cache.get(2);
+        ReplaceWords rw = new ReplaceWords();
+        List<String> dictionary = new ArrayList<>();
+        dictionary.add("cat");
+        dictionary.add("rat");
+        dictionary.add("bat");
 
+        String sentence = "the cattle was rattled by the battery";
+
+        rw.replaceWords(dictionary, sentence);
     }
 }

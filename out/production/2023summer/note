@@ -80,3 +80,17 @@ queue.poll();	//移除
 
 //左移 2的n次方
 (1 << n)
+
+
+// split
+String str = "apple,orange,banana,grape";
+
+// 使用逗号作为分隔符进行字符串分割，限制划分次数为 2
+String[] fruits = str.split(",", 2);
+
+
+// trim
+String str = "   Hello, World!   ";
+
+// 使用 trim() 方法去除开头和结尾的空白字符
+String trimmedStr = str.trim();
