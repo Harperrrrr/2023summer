@@ -1,3 +1,7 @@
+import Array.Manacher;
+import Array.MyManacher;
+import DP.DifferentSubsequence;
+import DP.MinFallingPath;
 import Structure.LFUCache;
 import Structure.LRUCache;
 import Structure.ReplaceWords;
@@ -8,14 +12,7 @@ import java.util.List;
 
 public class Test {
     public static void main(String[] args) {
-        ReplaceWords rw = new ReplaceWords();
-        List<String> dictionary = new ArrayList<>();
-        dictionary.add("cat");
-        dictionary.add("rat");
-        dictionary.add("bat");
-
-        String sentence = "the cattle was rattled by the battery";
-
-        rw.replaceWords(dictionary, sentence);
+        DifferentSubsequence ds = new DifferentSubsequence();
+        ds.numDistinct("babgbag", "bag");
     }
 }

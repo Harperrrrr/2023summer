@@ -7,6 +7,10 @@ PriorityQueue<ListNode> maxHeap = new PriorityQueue<>((node1, node2) -> node2.va
 
 获取peek()   弹出poll()    加入offer()
 
+//Deque、LinkedList同理
+Deque<Integer> deque = new LinkedList();
+LinkedList<Integer> deque = new LinkedList();
+
 
 //获取数组/字符串长度
 char[] charArray = {'H', 'e', 'l', 'l', 'o'};
@@ -94,3 +98,8 @@ String str = "   Hello, World!   ";
 
 // 使用 trim() 方法去除开头和结尾的空白字符
 String trimmedStr = str.trim();
+
+
+//堆
+数组模拟，索引为i
+父节点(i - 1)/2	左子节点2 * i + 1
